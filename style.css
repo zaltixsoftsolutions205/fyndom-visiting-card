@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* MAIN CARD */
+.digital-card {
+  width: 440px;
+  background: #fff3c4; /* light visible yellow */
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.35);
+}
+
+/* TOP HEADER – WHITE */
+.card-header {
+  height: 190px; /* slightly reduced so content moves up */
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px; /* logo moved up */
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+/* LOGO – BIGGER & UP */
+.company-logo {
+  width: 175px; /* ⬅ bigger */
+}
+
+/* PROFILE IMAGE */
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: -95px; /* ⬅ move profile up */
+}
+
+.profile-img {
+  width: 180px; /* ⬅ bigger */
+  height: 180px;
+  border-radius: 50%;
+  border: 6px solid #ffffff;
+  object-fit: cover;
+  background: #ffffff;
+}
+
+/* BODY */
+.card-body {
+  padding: 30px 30px 45px; /* reduced top padding */
+  text-align: center;
+}
+
+.card-body h2 {
+  font-size: 27px;
+  font-weight: 600;
+  color: #14532d;
+}
+
+.designation {
+  color: #15803d;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.company {
+  margin: 10px 0 22px;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info i {
+  color: #16a34a;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* ACTION BUTTONS */
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.btn {
+  padding: 15px;
+  border-radius: 32px;
+  background: #16a34a;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(22,163,74,0.35);
+}
+
+/* SAVE CONTACT BUTTON */
+.save-btn {
+  margin-top: 25px;
+  padding: 16px;
+  width: 100%;
+  border: none;
+  border-radius: 36px;
+  background: #14532d;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.save-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(20,83,45,0.35);
+}
+
+/* SOCIAL ICONS */
+.social-icons {
+  margin-top: 22px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  font-size: 28px; /* slightly bigger */
+  color: #16a34a;
+  transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.15);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 480px) {
+  .digital-card {
+    width: 95%;
+    border-radius: 35px;
+  }
+
+  .profile-img {
+    width: 155px;
+    height: 155px;
+  }
+
+  .company-logo {
+    width: 150px;
+  }
+}

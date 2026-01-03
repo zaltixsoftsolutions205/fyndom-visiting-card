@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FYNDOM Digital Visiting Card</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card-wrapper">
+
+  <div class="digital-card">
+
+    <!-- HEADER -->
+    <div class="card-header">
+      <img src="assets/logo.png" class="company-logo">
+    </div>
+
+    <!-- PROFILE -->
+    <div class="profile-wrapper">
+      <img src="assets/profile.jpeg" class="profile-img">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="card-body">
+      <h2>Sai Kumar Dara</h2>
+      <span class="designation">Founder & CEO</span>
+
+      <p class="company">FYNDOM – Accommodation Technology</p>
+
+      <!-- CONTACT INFO -->
+      <div class="contact-info">
+        <p><i class="fas fa-phone"></i> +91 76748 43434</p>
+        <p><i class="fas fa-envelope"></i> contact@fyndom.in</p>
+        <p><i class="fas fa-globe"></i> www.fyndom.in</p>
+      </div>
+
+      <!-- ACTION BUTTONS -->
+      <div class="action-buttons">
+        <a href="tel:+917674843434" class="btn">
+          <i class="fas fa-phone"></i> Call
+        </a>
+
+        <a href="https://wa.me/917674843434" target="_blank" class="btn">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+
+        <a href="mailto:contact@fyndom.in" class="btn">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+
+        <a href="https://fyndom.in" target="_blank" class="btn">
+          <i class="fas fa-globe"></i> Website
+        </a>
+      </div>
+
+      <!-- SAVE CONTACT -->
+      <button class="save-btn" onclick="saveContact()">
+        <i class="fas fa-address-card"></i> Save Contact
+      </button>
+
+      <!-- SOCIAL MEDIA -->
+      <div class="social-icons">
+        <a href="https://www.instagram.com/fyndom.in/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/people/Fyndom/61580885351941/"><i class="fab fa-facebook"></i></a>
+        <a href="https://wa.me/917674843434"><i class="fab fa-whatsapp"></i></a>
+        <a href="mailto:contact@fyndom.in"><i class="fas fa-envelope"></i></a>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
